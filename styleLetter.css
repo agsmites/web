@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+.card,
+.envelope {
+  font-family: "Protest Riot", sans-serif;
+  background-color: #fff9f9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  height: 29em;
+  padding: 2em;
+  position: relative;
+  width: 21em;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.envelope {
+  background:  #ff3333;;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin: -2em -2em;
+  position: absolute;
+  transform: rotate(-8deg);
+  z-index: -1;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 2em;
+  font-weight: 500;
+  margin: 0;
+  width: 90%;
+}
+p{
+    font-family: 12px;
+    font-weight: 400;
+    font-family: "Handlee", cursive;
+
+}
+h1>span{
+    font-size: 15px;
+}
+em {
+  color: #cc2119;
+  font-style: normal;
+}
+
+.heart-letter {
+  bottom: 4em;
+  position: absolute;
+  right: 4em;
+}
+
+.heart-letter::before,
+.heart-letter::after {
+  background-color: #cd231b;
+  border-radius: 50px 50px 0 0;
+  content: "";
+  height: 25px;
+  left: 15px;
+  position: absolute;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  width: 15px;
+}
+
+.heart-letter::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.container{
+    position: relative;
+}
+
+.hearts-letter {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .hearts-letter {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    pointer-events: none;
+  }
+  
+  .heart:before,
+  .heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #D00000;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    pointer-events: none;
+  }
+  
+  .heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  .a4 {
+    
+    left: 100%;
+    transform: scale(0.6);
+    opacity: 1;
+    -webkit-animation: slideUp2 10s linear 1, sideSway2 2s ease-in-out 10 alternate;
+    -moz-animation: slideUp2 4s linear 1, sideSway2 2s ease-in-out 10 alternate;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  
+
+  .a5 {
+    
+    left: 55%;
+    transform: scale(1);
+    opacity: 1;
+    -webkit-animation: slideUp2 15s linear 1, sideSway2 4s ease-in-out 10 alternate;
+    -moz-animation: slideUp2 5s linear 1, sideSway2 4s ease-in-out 10 alternate;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  
+  .a6 {
+    
+    left: 0%;
+    transform: scale(0.8);
+    opacity: 1;
+    -webkit-animation: slideUp2 10s linear 1, sideSway2 2s ease-in-out 10 alternate;
+    -moz-animation: slideUp2 7s linear 1, sideSway2 2s ease-in-out 10 alternate;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+
+  @-webkit-keyframes slideUp2 {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: -2000px;
+    }
+  }
+  @keyframes slideUp2 {
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: -2000px;
+    }
+  }
+  @-webkit-keyframes sideSway2 {
+    0% {
+      margin-left:100px;
+    }
+    100% {
+      margin-left: 50px;
+    }
+  }
+  @keyframes sideSway2 {
+    0% {
+      margin-left: 10px;
+    }
+    100% {
+      margin-left: 50px;
+    }
+  }
